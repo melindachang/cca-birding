@@ -6,14 +6,25 @@
   font-style: normal
   src: url('./assets/font/NeueMontreal-Regular.otf')
 
+@font-face
+  font-family: "Barracuda"
+  font-weight: normal
+  font-style: normal
+  src: url('./assets/font/Barracuda-regular.ttf')
+
 /************************************GLOBAL IMPORTS END*************************************/
 
 *
   font-family: "Neue Montreal"
   font-weight: 400
 
+::selection
+  color: black
+  background: white
+
 body
   margin: 0
+  overflow: hidden
   background: #161616
 
 .socials
@@ -33,6 +44,7 @@ body
   width: 100%
   height: 100vh
   background: #fff
+  z-index: 1
 .menu
   padding: 10vh 0 25vh
   --offset: 20vw
@@ -117,3 +129,35 @@ body
   font-size: 7vw
   padding: 0 1vw
   line-height: 1.15
+
+.hero-wrapper
+  width: 100%
+  height: 100vh
+  display: flex
+  padding: 0
+  margin: 0
+
+  justify-content: center
+  align-items: center
+  .fact
+    width: 60%
+    text-align: center
+    color: white
+    font-size: 32px
+    letter-spacing: 4px
+    font-family: 'Barracuda'
+    text-transform: uppercase
+    line-height: 1.5
+
+.imgBx
+  position: absolute
+  width: 300px
+  height: 400px
+  pointer-events: none
+  transform: translate(-50%, -50%)
+  z-index: -1
+  img
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
