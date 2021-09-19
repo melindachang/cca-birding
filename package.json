@@ -10,5 +10,8 @@
   "devDependencies": {
     "sass": "^1.41.1",
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "gsap": "^3.7.1"
   }
 }
