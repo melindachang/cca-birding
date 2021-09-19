@@ -13,5 +13,17 @@
   },
   "dependencies": {
     "gsap": "^3.7.1"
-  }
+  },
+  "description": "",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melindachang/cca-birding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/melindachang/cca-birding/issues"
+  },
+  "homepage": "https://github.com/melindachang/cca-birding#readme"
 }
