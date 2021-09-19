@@ -1,73 +1,21 @@
 import './style.sass';
 import gsap from 'gsap';
 
-const tl = new gsap.timeline({ paused: true });
+var t1 = new gsap.timeline({ paused: true });
 
-tl.to(document.querySelector('.menu-left'), 1, {
+t1.to('.nav-container', 1, {
   left: 0,
-  ease: "Expo.easeInOut",
+  ease: 'Expo.easeInOut',
 });
 
-tl.to(
-  document.querySelector('.menu-right'),
-  1,
-  {
-    right: 0,
-    ease: "Expo.easeInOut",
-  },
-  '-=1'
-);
+t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
 
-tl.staggerFrom(
-  document.querySelectorAll('.menu-links > div'),
-  0.8,
-  {
-    y: 100,
-    opacity: 0,
-    ease: 'Expo.easeOut',
-  },
-  '0.1',
-  '-=0.4'
-);
+t1.staggerFrom('.socials', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.4', '-=0.6');
 
-tl.staggerFrom(
-  document.querySelectorAll('.mail > div, .socials > div'),
-  0.8,
-  {
-    y: 100,
-    opacity: 0,
-    ease: 'Expo.easeOut',
-  },
-  '0.1',
-  '-=1'
-);
-
-tl.from(
-  document.querySelector('.menu-close'),
-  1,
-  {
-    scale: 0,
-    opacity: 1,
-    ease: 'Expo.easeInOut',
-  },
-  '-=1'
-);
-
-tl.to(
-  document.querySelector('.hr'),
-  0.4,
-  {
-    scaleY: 1,
-    transformOrigin: '0% 50%',
-    ease: 'Power2.ease',
-  },
-  '-=2'
-);
-
-tl.reverse();
+t1.reverse();
 document.querySelector('.menu-open').addEventListener('click', function () {
-  tl.reversed(!tl.reversed());
+  t1.reversed(!t1.reversed());
 });
 document.querySelector('.menu-close').addEventListener('click', function () {
-  tl.reversed(!tl.reversed());
+  t1.reversed(!t1.reversed());
 });

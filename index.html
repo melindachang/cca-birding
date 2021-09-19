@@ -13,42 +13,55 @@
   </head>
   <body>
     <div id="app">
-      <div class="container">
-        <div class="menu-close">
-          <div class="menu-close-img"><img src="assets/img/close-icon.png" alt="" /></div>
+      <div class="menu-open">menu</div>
+      <div class="nav-container">
+        <div class="menu-close">close</div>
+        <div class="socials">
+          <span>instagram</span>
+          <span>email</span>
         </div>
-        <div class="hr"></div>
-        <div class="menu">
-          <div class="menu-left">
-            <div class="menu-links">
-              <div class="menu-link">
-                <a href="#">Home <span>01</span></a>
-              </div>
-              <div class="menu-link">
-                <a href="#">About <span>02</span></a>
-              </div>
-              <div class="menu-link">
-                <a href="#">Contact <span>03</span></a>
+        <nav class="menu">
+          <div class="menu__item">
+            <a class="menu__item-link">Home</a>
+            <img class="menu__item-img" src="./assets/img/menu-img-one.jpg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Home - Home - Home - Home - Home - Home - Home</span>
               </div>
             </div>
           </div>
-          <div class="menu-right">
-            <div class="contact">
-              <div class="mail">
-                <div><span class="title">Contact</span><br /><br /></div>
-                <div><span class="info">wedonthaveanemail@gmail.com</span><br /></div>
-              </div>
-              <div class="socials">
-                <div><span class="title">Follow Us</span><br /><br /></div>
-                <div><span class="info">Instagram</span><br /><br /></div>
-                <div><span class="info">Twitter</span></div>
+          <div class="menu__item">
+            <a class="menu__item-link">About Us</a>
+            <img class="menu__item-img" src="./assets/img/menu-img-two.jpg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span
+                  >About Us - About Us - About Us - About Us - About Us - About Us - About Us</span
+                >
               </div>
             </div>
           </div>
-        </div>
+          <div class="menu__item">
+            <a class="menu__item-link">Events</a>
+            <img class="menu__item-img" src="./assets/img/menu-img-three.jpg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Events - Events - Events - Events - Events - Events - Events</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item">
+            <a class="menu__item-link">Contact</a>
+            <img class="menu__item-img" src="./assets/img/menu-img-four.jpg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Contact - Contact - Contact - Contact - Contact - Contact - Contact</span>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-    <div class="menu-open">menu</div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
