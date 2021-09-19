@@ -34,3 +34,5 @@ document.addEventListener('mousemove', (e) => {
     stagger: -0.1,
   });
 });
+
+//noise
