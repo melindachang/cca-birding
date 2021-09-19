@@ -7,7 +7,7 @@ fetch('https://some-random-api.ml/animal/birb')
 // let t0 = new gsap.timeline();
 // t0.fromTo('.fact', 2, { y: 100, opacity: 0 }, { y: 0, opacity: 1, ease: 'Expo.easeOut' });
 
-let t1 = new gsap.timeline({ paused: true });
+const t1 = new gsap.timeline({ paused: true });
 
 t1.to('.nav-container', 1, {
   left: 0,
