@@ -15,7 +15,7 @@
 /************************************GLOBAL IMPORTS END*************************************/
 
 @media only screen and (hover: none) and (pointer: coarse)
-  .imgBx, .menu__item-img
+  .imgBx
     display: none
 
   .hero-wraper .fact
@@ -81,6 +81,7 @@ body
       cursor: pointer
       position: relative
       transition: opacity 0.4s
+      // line-height: 1.3
 
       &::before
         all: initial
@@ -108,8 +109,9 @@ body
       z-index: 2
       pointer-events: none
       position: absolute
-      height: 12vh
-      max-height: 600px
+      // height: 12vh
+      height: 0.9em
+      // max-height: 600px
       opacity: 0
       left: 8%
       top: 10%
