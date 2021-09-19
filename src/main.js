@@ -24,6 +24,9 @@ document.querySelector('.menu-open').addEventListener('click', (e) => {
 document.querySelector('.menu-close').addEventListener('click', (e) => {
   t1.reversed(!t1.reversed());
 });
+document.querySelector('.menu__item-active').addEventListener('click', (e) => {
+  t1.reversed(!t1.reversed());
+});
 
 // SOMETHING ELSE
 
