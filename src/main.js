@@ -46,9 +46,6 @@ const noise = () => {
   let noiseData = [];
   let frame = 0;
   let frameTimer = 1;
-
-  let loopTimeout;
-
   // Create Noise
   const createNoise = () => {
     const idata = ctx.createImageData(wWidth, wHeight);
