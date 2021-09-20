@@ -12,6 +12,11 @@
   font-style: normal
   src: url('../assets/font/Barracuda-regular.ttf')
 
+@font-face
+  font-family: "Cosi Azure"
+  font-weight: 900
+  font-style: normal
+  src: url('../assets/font/Cosi Azure Black.otf')
 /************************************GLOBAL IMPORTS END*************************************/
 
 @media only screen and (hover: none) and (pointer: coarse)
@@ -161,6 +166,13 @@ body
     text-transform: uppercase
     line-height: 2
     // color: #b3b3b3
+  h1
+    color: white
+    font-size: 7vw
+    font-family: 'Cosi Azure'
+    font-weight: 900
+    // color: #b3b3b3
+    text-transform: uppercase
 
 .imgBx
   position: absolute
@@ -169,8 +181,19 @@ body
   pointer-events: none
   transform: translate(-50%, -50%)
   z-index: -1
+  border: 1px solid rgba(255,255,255,0.1)
   img
     position: absolute
     width: 100%
     height: 100%
     object-fit: cover
+
+#noise
+  z-index: 1
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+  opacity: .05
