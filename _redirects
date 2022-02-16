@@ -1,0 +1,6 @@
+[[redirects]]
+   from = "https://discord.ccabirding.club/*"
+   to = "https://discord.gg/efwH99QwgA/:splat"
+   status = 301
+   force = true
+   headers = {X-From = "Netlify"}

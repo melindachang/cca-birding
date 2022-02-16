@@ -4,6 +4,7 @@ import gsap from 'gsap';
 fetch('https://some-random-api.ml/animal/birb')
   .then((res) => res.json())
   .then((data) => (document.querySelector('.fact').textContent = data.fact));
+
 let t0 = new gsap.timeline();
 t0.fromTo('.hero-wrapper h1', 1, { y: 60, opacity: 0 }, { y: 0, opacity: 1, ease: 'Expo.easeOut' });
 
@@ -27,8 +28,6 @@ document.querySelector('.menu-close').addEventListener('click', (e) => {
 document.querySelector('.menu__item-active').addEventListener('click', (e) => {
   t1.reversed(!t1.reversed());
 });
-
-// SOMETHING ELSE
 
 document.addEventListener('mousemove', (e) => {
   gsap.to('.imgBx', {
