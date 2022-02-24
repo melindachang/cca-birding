@@ -1,6 +1,1 @@
-[[redirects]]
-   from = "https://discord.ccabirding.club/*"
-   to = "https://discord.gg/efwH99QwgA/:splat"
-   status = 200
-   force = true
-   headers = {X-From = "Netlify"}
+/discord            https://discord.gg/efwH99QwgA/
