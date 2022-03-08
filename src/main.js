@@ -14,6 +14,7 @@ t1.to('.nav-container', 1, {
   left: 0,
   ease: 'Expo.easeInOut',
 });
+
 t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
 
 t1.staggerFrom('.socials', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.4', '-=0.6');
@@ -45,7 +46,7 @@ const noise = () => {
   let noiseData = [];
   let frame = 0;
   let frameTimer = 1;
-  // Create Noise
+
   const createNoise = () => {
     const idata = ctx.createImageData(wWidth, wHeight);
     const buffer32 = new Uint32Array(idata.data.buffer);
@@ -60,7 +61,6 @@ const noise = () => {
     noiseData.push(idata);
   };
 
-  // Play Noise
   const paintNoise = () => {
     if (frame === 9) {
       frame = 0;
@@ -74,7 +74,6 @@ const noise = () => {
     ctx.putImageData(noiseData[frame], 0, 0);
   };
 
-  // Loop
   const loop = () => {
     paintNoise(frame);
 
@@ -83,7 +82,6 @@ const noise = () => {
     }, 1000 / 25);
   };
 
-  // Setup
   const setup = () => {
     wWidth = window.innerWidth;
     wHeight = window.innerHeight;
@@ -98,7 +96,6 @@ const noise = () => {
     loop();
   };
 
-  // Init
   const init = (() => {
     canvas = document.getElementById('noise');
     ctx = canvas.getContext('2d');
