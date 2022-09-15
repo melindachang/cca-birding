@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/efwH99QwgA"
+  status = 301
+
+[[redirects]]
+  from = "/signup"
+  to = "https://forms.gle/Dv5VPbvtTb4n3q9v5"
+  status = 301

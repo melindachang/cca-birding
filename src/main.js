@@ -4,6 +4,7 @@ import gsap from 'gsap';
 fetch('https://some-random-api.ml/animal/birb')
   .then((res) => res.json())
   .then((data) => (document.querySelector('.fact').textContent = data.fact));
+
 let t0 = new gsap.timeline();
 t0.fromTo('.hero-wrapper h1', 1, { y: 60, opacity: 0 }, { y: 0, opacity: 1, ease: 'Expo.easeOut' });
 
@@ -13,11 +14,19 @@ t1.to('.nav-container', 1, {
   left: 0,
   ease: 'Expo.easeInOut',
 });
-t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
+<<<<<<< HEAD
 
+t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
+=======
+>>>>>>> 846df665cb05260150bc24d0e4b6eb06f7eff8d8
+
+t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
 t1.staggerFrom('.socials', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.4', '-=0.6');
 
 t1.reverse();
+
+
+// clean up
 document.querySelector('.menu-open').addEventListener('click', (e) => {
   t1.reversed(!t1.reversed());
 });
@@ -27,8 +36,6 @@ document.querySelector('.menu-close').addEventListener('click', (e) => {
 document.querySelector('.menu__item-active').addEventListener('click', (e) => {
   t1.reversed(!t1.reversed());
 });
-
-// SOMETHING ELSE
 
 document.addEventListener('mousemove', (e) => {
   gsap.to('.imgBx', {
@@ -46,7 +53,10 @@ const noise = () => {
   let noiseData = [];
   let frame = 0;
   let frameTimer = 1;
-  // Create Noise
+<<<<<<< HEAD
+
+=======
+>>>>>>> 846df665cb05260150bc24d0e4b6eb06f7eff8d8
   const createNoise = () => {
     const idata = ctx.createImageData(wWidth, wHeight);
     const buffer32 = new Uint32Array(idata.data.buffer);
@@ -61,7 +71,6 @@ const noise = () => {
     noiseData.push(idata);
   };
 
-  // Play Noise
   const paintNoise = () => {
     if (frame === 9) {
       frame = 0;
@@ -75,7 +84,6 @@ const noise = () => {
     ctx.putImageData(noiseData[frame], 0, 0);
   };
 
-  // Loop
   const loop = () => {
     paintNoise(frame);
 
@@ -84,7 +92,6 @@ const noise = () => {
     }, 1000 / 25);
   };
 
-  // Setup
   const setup = () => {
     wWidth = window.innerWidth;
     wHeight = window.innerHeight;
@@ -99,7 +106,6 @@ const noise = () => {
     loop();
   };
 
-  // Init
   const init = (() => {
     canvas = document.getElementById('noise');
     ctx = canvas.getContext('2d');
