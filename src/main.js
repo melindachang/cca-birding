@@ -14,11 +14,6 @@ t1.to('.nav-container', 1, {
   left: 0,
   ease: 'Expo.easeInOut',
 });
-<<<<<<< HEAD
-
-t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
-=======
->>>>>>> 846df665cb05260150bc24d0e4b6eb06f7eff8d8
 
 t1.staggerFrom('.menu > div', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.1', '-=0.4');
 t1.staggerFrom('.socials', 0.8, { y: 100, opacity: 0, ease: 'Expo.easeOut' }, '0.4', '-=0.6');
@@ -53,10 +48,6 @@ const noise = () => {
   let noiseData = [];
   let frame = 0;
   let frameTimer = 1;
-<<<<<<< HEAD
-
-=======
->>>>>>> 846df665cb05260150bc24d0e4b6eb06f7eff8d8
   const createNoise = () => {
     const idata = ctx.createImageData(wWidth, wHeight);
     const buffer32 = new Uint32Array(idata.data.buffer);
